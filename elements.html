@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Elements - Solid State by HTML5 UP</title>
+		<title>Scan -3Dfx</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -67,7 +62,8 @@
 										// Define the on success callback function
 										function onScanSuccess(qrCodeMessage) {
 											if (expectedValues.includes(qrCodeMessage)) {
-											alert('QR code value matches the expected list!');
+												var name = prompt("Match Found! Enter Your Name: ");
+    											alert("Congrats, " + name + "! You have successfully claimed the object.");
 											} else {
 											alert('QR code value does not match the expected list!');
 											}
